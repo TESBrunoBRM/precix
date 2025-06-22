@@ -1,0 +1,102 @@
+# 📈 Precix: Optimizador de Ganancias
+
+¡Bienvenido a **Precix**!  
+Esta herramienta te ayuda a encontrar el **precio de venta óptimo** para maximizar las ganancias de tu producto, utilizando modelos económicos clásicos y visualizaciones interactivas.
+
+---
+
+## 🚀 Características
+
+- **Cálculo automático** del precio óptimo y la ganancia máxima.
+- **Simulación y gráfica** de la función de ganancia según el precio.
+- Interfaz intuitiva y amigable con **Streamlit**.
+- Personalización de parámetros de demanda y costos.
+
+---
+
+## 🛠️ Dependencias
+
+Precix utiliza las siguientes librerías de Python:
+
+| Paquete         | Propósito                                 |
+|-----------------|-------------------------------------------|
+| `streamlit`     | Interfaz web interactiva                  |
+| `numpy`         | Cálculos numéricos                        |
+| `matplotlib`    | Gráficas y visualizaciones                |
+| `sympy`         | Cálculo simbólico y optimización          |
+
+---
+
+## 📦 Instalación
+
+1. **Clona este repositorio** o descarga los archivos en una carpeta local.
+
+2. **Crea un entorno virtual** (opcional pero recomendado):
+
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # En Windows: venv\Scripts\activate
+   ```
+
+3. **Instala las dependencias** ejecutando:
+
+   ```sh
+   pip install streamlit numpy matplotlib sympy
+   ```
+
+---
+
+## 📝 Archivos principales
+
+- [`precix_gui.py`](precix_gui.py): Interfaz principal y lógica de la aplicación.
+- [`economic_models.py`](economic_models.py): Modelos económicos y funciones de ganancia.
+- [`optimization_solver.py`](optimization_solver.py): Algoritmo de optimización simbólica.
+
+---
+
+## 💡 ¿Cómo se usa?
+
+1. **Ejecuta la aplicación** con el siguiente comando:
+
+   ```sh
+   streamlit run precix_gui.py
+   ```
+
+2. **Abre tu navegador** y sigue el enlace que aparece en la terminal (usualmente http://localhost:8501).
+
+3. **Configura los parámetros** en la barra lateral:
+   - Coeficientes de demanda (`a` y `b`)
+   - Costo variable unitario
+   - Costo fijo total
+
+4. Haz clic en **"🚀 Calcular Precio Óptimo y Simular"**.
+
+5. **¡Listo!** Verás el precio óptimo sugerido, la ganancia máxima estimada y una gráfica interactiva.
+
+---
+
+## 🎨 Ejemplo visual
+
+![Ejemplo de interfaz Precix](https://media.discordapp.net/attachments/1369315574986834010/1385835912541507604/image.png?ex=68597e05&is=68582c85&hm=4e4dc192bec4ffc617b983eac1c9ccd3e4e327ef77dda3775ec46bea93bd3d3b&=&format=webp&quality=lossless&width=1620&height=856) 
+
+---
+
+## ❓ Preguntas frecuentes
+
+- **¿Puedo usar decimales en los parámetros?**  
+  Sí, todos los campos aceptan decimales.
+
+- **¿Qué hago si veo un error?**  
+  Verifica que los parámetros sean positivos y tengan sentido económico.
+
+- **¿Puedo modificar los modelos?**  
+  Sí, puedes editar [`economic_models.py`](economic_models.py) para adaptar los modelos a tus necesidades.
+
+---
+
+## 👨‍💻 Autoría
+
+Creado con ❤️ por el equipo de Precix.  
+Hecho con Python, SymPy, NumPy, Matplotlib y Streamlit.
+
+---
