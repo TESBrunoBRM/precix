@@ -100,3 +100,38 @@ Creado con ❤️ por el equipo de Precix.
 Hecho con Python, SymPy, NumPy, Matplotlib y Streamlit.
 
 ---
+
+## 📝 Cambios y características principales en `precix_gui.py`
+
+1. **Estructura y organización del código**
+   - El archivo está organizado en secciones: funciones de modelado económico, funciones de optimización, cálculo de métricas, interfaz de usuario y visualización.
+
+2. **Funciones matemáticas y de optimización**
+   - Se implementaron funciones para modelar la demanda, ingresos, costos y ganancia usando SymPy para manipulación simbólica.
+   - Se añadió una función para encontrar el precio óptimo que maximiza la ganancia, resolviendo derivadas y validando condiciones económicas reales (precios y cantidades no negativas).
+
+3. **Interfaz de usuario con Streamlit**
+   - Se utiliza Streamlit para crear una interfaz web interactiva.
+   - Los parámetros clave (demanda, sensibilidad al precio, costos, moneda, precio actual) se configuran desde la barra lateral.
+   - Se agregaron ayudas contextuales y descripciones detalladas para cada parámetro, facilitando su comprensión.
+
+4. **Cálculo y comparación de escenarios**
+   - Al pulsar el botón de cálculo, se determina el precio óptimo y la ganancia máxima.
+   - Se compara el escenario óptimo con el precio actual ingresado, mostrando métricas clave (unidades vendidas, ingresos, ganancia) en columnas separadas.
+
+5. **Visualización gráfica**
+   - Se genera un gráfico de la función de ganancia respecto al precio usando Matplotlib.
+   - Se destacan visualmente el precio óptimo, el precio actual y los puntos de equilibrio (donde la ganancia es cero).
+   - El rango del gráfico se ajusta dinámicamente para incluir todos los puntos relevantes.
+
+6. **Manejo de casos especiales**
+   - Si la sensibilidad al precio es cero, se informa al usuario y se explica el comportamiento especial de la función de ganancia.
+   - Se validan los datos de entrada y se muestran mensajes de error o advertencia si los parámetros no tienen sentido económico.
+
+7. **Explicaciones matemáticas**
+   - Al final de la app, se muestran las fórmulas matemáticas utilizadas, explicadas paso a paso y adaptadas a los valores ingresados por el usuario.
+   - Se usan expansores para mostrar explicaciones adicionales de manera opcional.
+
+8. **Mensajes y experiencia de usuario**
+   - Se utilizan mensajes de éxito, advertencia e información para guiar al usuario en todo momento.
+   - El diseño y los textos están pensados para ser amigables y comprensibles, incluso para usuarios sin formación matemática.
